@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import styles from "../styles/Home.module.css";
 
-import profile from "../assets/kk-profile-v4.png";
+import profile from "../assets/KK-Orange.png";
 
 export default function Home() {
   return (
