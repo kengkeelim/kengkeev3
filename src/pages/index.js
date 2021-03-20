@@ -242,7 +242,10 @@ export default function Home() {
             </div>
             <div className="w-full text-center">
               <a href="https://forms.gle/oKDeiDTmJoKv7DqJ8">
-                <button className="text-sm md:text-xl bg-orange-light text-white w-full md:w-1/2 font-bold p-3 mt-6 focus:outline-none border-2 hover:bg-white hover:text-orange-light hover:border-orange-light">
+                <button
+                  type="button"
+                  className="text-sm md:text-xl bg-orange-light text-white w-full md:w-1/2 font-bold p-3 mt-6 focus:outline-none border-2 hover:bg-white hover:text-orange-light hover:border-orange-light"
+                >
                   YES, LET'S DO IT!
                 </button>
               </a>
@@ -302,7 +305,10 @@ export default function Home() {
             </div>
             <div className="w-full text-center">
               <a href="https://forms.gle/oKDeiDTmJoKv7DqJ8">
-                <button className="text-sm md:text-xl bg-orange-light text-white w-full md:w-1/2 font-bold p-3 mt-6 focus:outline-none border-2 hover:bg-white hover:text-orange-light hover:border-orange-light">
+                <button
+                  type="button"
+                  className="text-sm md:text-xl bg-orange-light text-white w-full md:w-1/2 font-bold p-3 mt-6 focus:outline-none border-2 hover:bg-white hover:text-orange-light hover:border-orange-light"
+                >
                   YES, LET'S EXPLORE!
                 </button>
               </a>
@@ -384,7 +390,10 @@ export default function Home() {
             </div>
             <div className="w-full text-center">
               <a href="https://t.me/VZYUIOQQDS">
-                <button className="text-sm md:text-xl bg-orange-light text-white w-full md:w-1/2 font-bold p-3 mt-6 focus:outline-none border-2 hover:bg-white hover:text-orange-light hover:border-orange-light">
+                <button
+                  type="button"
+                  className="text-sm md:text-xl bg-orange-light text-white w-full md:w-1/2 font-bold p-3 mt-6 focus:outline-none border-2 hover:bg-white hover:text-orange-light hover:border-orange-light"
+                >
                   YES, LET'S CHAT!
                 </button>
               </a>
