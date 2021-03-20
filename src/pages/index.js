@@ -60,9 +60,9 @@ export default function Home() {
                 <input
                   type="text"
                   name="a_password"
-                  tabindex="-1"
+                  tabIndex="-1"
                   defaultValue=""
-                  autocomplete="off"
+                  autoComplete="off"
                 />
               </div>
             </div>
