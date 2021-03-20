@@ -34,7 +34,7 @@ export default function Home() {
             className="sendfox-form w-full mx-auto mt-6 md:flex md:flex-row md:content-start md:justify-center md:mt-10"
             id="1r65jv"
             data-async="true"
-            data-recaptcha="true"
+            data-recaptcha="false"
           >
             <div className="w-full md:w-3/5 md:flex md:flex-col md:justify-items-start">
               <p>
