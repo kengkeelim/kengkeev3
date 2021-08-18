@@ -17,12 +17,12 @@ export default function Home() {
         id="header"
         className="w-screen h-screen p-10 grid place-content-center md:h-5/6 md:p-28 lg:p-40 bg-red-50"
       >
-        <div className="xl:max-w-screen-md">
-          <div className="text-orange-light h-auto text-xl font-black grid place-items-center md:text-3xl">
-            KENGKEE.COM
-          </div>
-          <h1 className="text-center text-gray-800 font-black text-3xl mt-6 md:mt-10 md:text-5xl lg:text-7xl">
-            Do you want to get more done with less?
+        <div className="w-full h-16 text-orange-light text-xl font-black grid place-items-center absolute top-0 left-0 md:h-20 md:text-3xl">
+          KENGKEE.COM
+        </div>
+        <div className="xl:max-w-screen-md h-full">
+          <h1 className="text-center text-gray-800 font-black text-2xl mt-6 md:mt-10 md:text-4xl lg:text-6xl">
+            Do you want to do more with less?
           </h1>
           <p className="text-sm md:text-base text-center text-gray-500 mt-6 md:mt-10">
             Hi, my name is Keng Kee (a.k.a KK). I like sharing about learning
