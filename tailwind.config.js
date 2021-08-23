@@ -17,6 +17,38 @@ module.exports = {
         neonGreen: "#4DE82A",
         salmon: "#fa8072",
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            h1: {
+              color: theme("colors.gray.800"),
+            },
+            h2: {
+              color: theme("colors.gray.700"),
+            },
+            h3: {
+              color: theme("colors.gray.600"),
+            },
+            p: {
+              color: theme("colors.gray.500"),
+            },
+            a: {
+              color: theme("colors.orange.light"),
+              textDecoration: "none",
+              "&:hover": {
+                fontWeight: "bold",
+              },
+            },
+            th: {
+              color: theme("colors.gray.700"),
+            },
+            strong: {
+              color: theme('colors.gray.700'),
+              fontWeight: theme('font.semibold'),
+            }
+          },
+        },
+      }),
     },
   },
   variants: {
@@ -24,5 +56,5 @@ module.exports = {
       fontWeight: ["hover"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
