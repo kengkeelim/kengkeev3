@@ -95,7 +95,7 @@ export default function Home() {
                 alt="profile photo"
               />
               <div className="mt-10 md:ml-6 md:mt-0 md:w-1/2 md:grid md:place-content-center">
-                <h3 className="text-gray-600 font-semibold">FOLLOW ME ON:</h3>
+                <h3 className="text-gray-600 font-semibold">FIND ME ON:</h3>
                 <div className="flex flex-col justify-center">
                   <div className="flex flex-row justify-around text-gray-500 mt-6 md:justify-between">
                     <a href="https://facebook.com/kengkee.lim" target="_blank">
