@@ -39,13 +39,16 @@ module.exports = {
                 fontWeight: "bold",
               },
             },
+            tr: {
+              border: "0",
+            },
             th: {
               color: theme("colors.gray.700"),
             },
             strong: {
-              color: theme('colors.gray.700'),
-              fontWeight: theme('font.semibold'),
-            }
+              color: theme("colors.gray.700"),
+              fontWeight: theme("font.semibold"),
+            },
           },
         },
       }),
