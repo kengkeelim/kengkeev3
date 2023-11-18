@@ -299,21 +299,7 @@ export default function Home() {
               </ol>
             </div>
           </div>
-          <div className="mt-16 md:mt-24 md:m-auto">
-            <div className="text-2xl text-center text-gray-700 font-bold md:text-4xl">
-              Need help in digital marketing and business operations?
-            </div>
-            <div className="w-full text-center">
-              <a href="https://www.fiverr.com/kk_lim" target="_blank">
-                <button
-                  type="button"
-                  className="text-sm md:text-xl bg-orange-light text-white w-full md:w-1/2 font-bold p-3 mt-6 focus:outline-none border-2 hover:bg-white hover:text-orange-light hover:border-orange-light"
-                >
-                  Hire Me!
-                </button>
-              </a>
-            </div>
-          </div>
+
         </div>
       </section>
 
@@ -362,24 +348,26 @@ export default function Home() {
               </div>
             </a>
           </div>
+
           <div className="mt-16 md:mt-24 md:m-auto">
             <div className="text-2xl text-center text-gray-700 font-bold md:text-4xl">
-              Do you have many tasks pending in your to-do list for a long time?
+              Need help in digital marketing and business operations?
             </div>
             <div className="w-full text-center">
-              <a href="https://forms.gle/oKDeiDTmJoKv7DqJ8">
+              <a href="https://www.fiverr.com/kk_lim" target="_blank">
                 <button
                   type="button"
                   className="text-sm md:text-xl bg-orange-light text-white w-full md:w-1/2 font-bold p-3 mt-6 focus:outline-none border-2 hover:bg-white hover:text-orange-light hover:border-orange-light"
                 >
-                  YES, LET'S EXPLORE!
+                  Hire Me!
                 </button>
               </a>
             </div>
           </div>
+
         </div>
       </section>
-      
+
       <footer className="p-10 text-center text-sm text-white w-full bg-orange-light">
         Copyright 2021 @ Keng Kee <br />- All Rights Reserved -
       </footer>
