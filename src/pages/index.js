@@ -38,7 +38,7 @@ export default function Home() {
             data-recaptcha="false"
           >
             <div className="w-full md:w-3/5 md:flex md:flex-col md:justify-items-start">
-              <p>
+              <div>
                 <input
                   type="email"
                   placeholder="Enter Your Email"
@@ -46,15 +46,15 @@ export default function Home() {
                   className="w-full text-base md:text-lg border border-gray-300 p-3 italic box-border focus:outline-none focus:ring-2 focus:ring-orange-400"
                   required
                 />
-              </p>
-              <p className="mt-4">
+              </div>
+              <div className="mt-4">
                 <div className="text-zinc-800 text-sm flex flex-row items-center md:text-base">
                   <input type="checkbox" name="gdpr" value="1" required />
                   <label className="ml-4">
                     I agree to receive email updates and promotions.
                   </label>
                 </div>
-              </p>
+              </div>
               {/* no botz please */}
               <div
                 style={{ position: "absolute", left: "-5000px" }}
@@ -69,14 +69,14 @@ export default function Home() {
                 />
               </div>
             </div>
-            <p className="md:w-2/5 md:pl-4">
+            <div className="md:w-2/5 md:pl-4">
               <button
                 type="submit"
-                className="text-sm md:text-base bg-orange-400 text-zinc-800 w-full font-bold p-3 box-border mt-4 focus:outline-none hover:shadow-xl md:mt-0"
+                className="text-sm md:text-base bg-orange-400 text-stone-950 w-full font-bold p-3 box-border mt-4 focus:outline-none hover:shadow-xl md:mt-0"
               >
                 YES, SEND TO ME!
               </button>
-            </p>
+            </div>
           </form>
         </div>
       </header>
@@ -135,7 +135,7 @@ export default function Home() {
                   <a
                     href="https://skillshop.exceedlms.com/student/award/SuVtDSjhJJfD7SQt3mqctU4s"
                     target="_blank"
-                    className="text-base md:text-lg text-orange-400 p-2 hover:text-white hover:bg-orange-400"
+                    className="text-base md:text-lg text-orange-400 p-2 hover:text-stone-950 hover:bg-orange-400"
                   >
                     Google Ads Search Certification
                   </a>
@@ -145,7 +145,7 @@ export default function Home() {
                   <a
                     href="https://www.credential.net/bifqx6ll"
                     target="_blank"
-                    className="text-base md:text-lg text-orange-400 p-2 hover:text-white hover:bg-orange-400"
+                    className="text-base md:text-lg text-orange-400 p-2 hover:text-stone-950 hover:bg-orange-400"
                   >
                     Build Front-End Web Apps from Scratch
                   </a>
@@ -155,7 +155,7 @@ export default function Home() {
                   <a
                     href="https://www.datacamp.com/statement-of-accomplishment/course/58c539167b497501e9c7c2874cfc5d28f8537895"
                     target="_blank"
-                    className="text-base md:text-lg text-orange-400 p-2 hover:text-white hover:bg-orange-400"
+                    className="text-base md:text-lg text-orange-400 p-2 hover:text-stone-950 hover:bg-orange-400"
                   >
                     Data Analysis with Spreadsheets
                   </a>
@@ -177,7 +177,7 @@ export default function Home() {
               run marketing campaigns for the company.
             </p>
             <a href="https://triune.com.my/" target="_blank">
-              <div className="mt-6 p-2 w-32 text-center text-sm font-semibold text-orange-400 ml-auto hover:bg-orange-400 hover:text-white">
+              <div className="mt-6 p-2 w-32 text-center text-sm font-semibold text-orange-400 ml-auto hover:bg-orange-400 hover:text-stone-950">
                 LEARN MORE &#9658;
               </div>
             </a>
@@ -190,7 +190,7 @@ export default function Home() {
               trainings.
             </p>
             <a href="https://uiux.getcto.asia/" target="_blank">
-              <div className="mt-6 p-2 w-32 text-center text-sm font-semibold text-orange-400 ml-auto hover:bg-orange-400 hover:text-white">
+              <div className="mt-6 p-2 w-32 text-center text-sm font-semibold text-orange-400 ml-auto hover:bg-orange-400 hover:text-stone-950">
                 LEARN MORE &#9658;
               </div>
             </a>
@@ -204,7 +204,7 @@ export default function Home() {
               offer digital marketing services.
             </p>
             <a href="https://motivo.marketing/" target="_blank">
-              <div className="mt-6 p-2 w-32 text-center text-sm font-semibold text-orange-400 ml-auto hover:bg-orange-400 hover:text-white">
+              <div className="mt-6 p-2 w-32 text-center text-sm font-semibold text-orange-400 ml-auto hover:bg-orange-400 hover:text-stone-950">
                 LEARN MORE &#9658;
               </div>
             </a>
