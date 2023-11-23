@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import styles from "../styles/Home.module.css";
 
-import profile from "../assets/KK-Orange.png";
+import profile from "../assets/undraw_hello_re_3evm.svg";
 
 export default function Home() {
   return (
