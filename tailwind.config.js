@@ -6,17 +6,7 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {
-        orange: {
-          light: "#ff4f00",
-          dark: "#d45d26",
-        },
-        oceanGreen: "#3dc495",
-        starCommandBlue: "#0282BD",
-        purpleMunsell: "#A608C9",
-        neonGreen: "#4DE82A",
-        salmon: "#fa8072",
-      },
+      colors: {},
     },
   },
   variants: {
