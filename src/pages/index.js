@@ -6,7 +6,7 @@ import profile from "../assets/undraw_hello_re_3evm.svg";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} bg-gradient-to-br from-gray-100 via-zinc-50 to-pink-100`}>
       <Head>
         <title>Keng Kee | My Personal Website</title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,42 +15,40 @@ export default function Home() {
 
       <header
         id="header"
-        className="w-screen h-screen p-10 grid place-content-center sm:p-24 md:h-5/6 md:p-28 lg:p-40 bg-gray-100"
+        className="w-screen h-screen p-10 grid place-content-center sm:p-24"
       >
-        <div className="xl:max-w-screen-md h-full">
-          <h1 className="text-center text-stone-950 font-black mt-3 text-5xl md:mt-6 md:text-6xl lg:text-7xl">
+        <div className="lg:max-w-screen-md h-full">
+          <h1 className="text-center text-stone-950 font-black text-5xl md:text-6xl lg:text-7xl">
             Do you want to <span className="text-orange-400">do more</span> with{" "}
             <span className="text-pink-600">less</span>?
           </h1>
-          <p className="text-base leading-relaxed sm:leading-loose md:text-lg lg:text-xl text-center text-zinc-800 mt-4 md:mt-6">
+          <p className="text-base leading-relaxed sm:leading-loose md:text-lg text-center text-zinc-800 mt-6 md:mt-10">
             Hi, my name is Keng Kee (a.k.a KK). I like sharing about learning
             and productivity hacks. Get my BEST updates delivered to your inbox:
           </p>
           <form
             method="post"
             action="https://sendfox.com/form/3z2w2e/1r65jv"
-            className="sendfox-form w-full mx-auto mt-6 md:flex md:flex-row md:content-start md:justify-center md:mt-10"
+            className="sendfox-form w-full mx-auto mt-6 md:mt-10 md:flex md:flex-row md:content-start md:justify-center"
             id="1r65jv"
             data-async="true"
             data-recaptcha="false"
           >
-            <div className="w-full md:w-3/5 md:flex md:flex-col md:justify-items-start">
+            <div className="m-auto max-w-xs md:w-2/3 md:m-0 md:flex md:flex-col md:justify-items-start">
               <div>
                 <input
                   type="email"
                   placeholder="Enter Your Email"
                   name="email"
-                  className="w-full text-base sm:text-lg md:text-xl lg:text-2xl border border-gray-300 p-3 italic box-border focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  className="w-full h-12 text-base sm:text-lg border border-gray-300 p-2 italic box-border focus:outline-none focus:ring-2 focus:ring-orange-400"
                   required
                 />
               </div>
-              <div className="mt-4">
-                <div className="text-zinc-800 text-sm flex flex-row items-center md:text-base lg:text-lg">
+              <div className="mt-4 text-zinc-800 text-sm flex flex-row items-center sm:text-base">
                   <input type="checkbox" name="gdpr" value="1" required />
-                  <label className="ml-4">
+                  <label className="ml-4 leading-tight">
                     I agree to receive email updates and promotions.
                   </label>
-                </div>
               </div>
               {/* no botz please */}
               <div
@@ -66,38 +64,36 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="md:w-2/5 md:pl-4">
+            <div className="m-auto max-w-xs md:w-1/3 md:pl-4 md:m-0">
               <button
                 type="submit"
-                className="text-sm sm:text-base md:text-lg lg:text-xl bg-orange-400 text-stone-950 w-full font-bold p-3 box-border mt-4 sm:mt-8 focus:outline-none hover:shadow-xl md:mt-0"
+                className="text-sm sm:text-base md:text-lg bg-orange-400 text-stone-950 w-full h-12 font-bold p-2 box-border mt-6 md:mt-0 focus:outline-none hover:shadow-xl"
               >
-                YES, SEND TO ME!
+                SEND TO ME
               </button>
             </div>
           </form>
         </div>
       </header>
 
-      <section className="w-screen p-10 sm:p-24 md:p-28 lg:p-40 bg-zinc-50">
-        <div className="xl:max-w-screen-md mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-stone-950 font-bold underline underline-offset-8 decoration-orange-400">
+      <section className="w-screen p-10 sm:p-24">
+        <div className="lg:max-w-screen-md mx-auto">
+          <h2 className="text-3xl sm:text-4xl text-stone-950 font-bold underline underline-offset-8 decoration-8 decoration-orange-400">
             Who is Keng Kee?
           </h2>
 
-          <div className="md:mt-16">
-            <div className="md:flex md:flex-row md:justify-center">
+          <div className="mt-10 md:mt-16">
+            <div className="lg:w-fit">
               <img
                 src={profile}
                 width="512px"
                 height="512px"
-                className="mt-10 h-48 w-48 sm:h-60 sm:w-60 rounded-full shadow-xl m-auto md:m-0 md:h-72 md:w-72"
+                className="m-auto h-48 w-48 sm:h-60 sm:w-60 rounded-full shadow-xl md:h-72 md:w-72"
                 alt="profile photo"
               />
-
-              <div className="mt-10 md:ml-6 md:mt-0 md:w-1/2 md:grid md:place-content-center"></div>
             </div>
 
-            <p className="mt-6 text-zinc-800 text-base leading-relaxed sm:leading-loose md:text-lg md:mt-10">
+            <p className="mt-10 md:mt-16 text-zinc-800 text-base leading-relaxed sm:leading-loose md:text-lg">
               I am a freelance digital marketer and front-end developer. I
               established myself as a strong executor in operations with almost
               3 years of experience in building the backbone of the product
@@ -111,9 +107,9 @@ export default function Home() {
           </div>
 
           <div className="md:mt-16 md:flex md:flex-row md:align-items-center md:justify-between">
-            <div className="mt-10 md:mt-0">
+            <div className="mt-10 md:mt-0 md:w-2/5">
               <h3 className="text-xl text-stone-950 font-semibold">SKILLS</h3>
-              <ol className="list-disc list-inside mt-3 text-base leading-relaxed sm:leading-loose md:text-lg text-zinc-800">
+              <ol className="list-disc list-inside mt-3 text-base leading-relaxed sm:leading-loose text-zinc-800">
                 <li>Project Management</li>
                 <li>Customer Service</li>
                 <li>SOP Development</li>
@@ -123,16 +119,16 @@ export default function Home() {
               </ol>
             </div>
 
-            <div className="mt-10 md:mt-0">
+            <div className="mt-10 md:mt-0 md:w-3/5">
               <h3 className="text-xl text-stone-950 font-semibold">
                 CERTIFICATIONS
               </h3>
-              <ol className="list-disc list-inside mt-3 text-base leading-relaxed sm:leading-loose md:text-lg text-zinc-800">
+              <ol className="list-disc list-inside mt-3 text-base leading-relaxed sm:leading-loose text-zinc-800">
                 <li>
                   <a
                     href="https://skillshop.exceedlms.com/student/award/SuVtDSjhJJfD7SQt3mqctU4s"
                     target="_blank"
-                    className="p-2 hover:text-stone-950 hover:bg-orange-400"
+                    className="hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-orange-400"
                   >
                     Google Ads Search Certification &#10138;
                   </a>
@@ -142,7 +138,7 @@ export default function Home() {
                   <a
                     href="https://www.credential.net/bifqx6ll"
                     target="_blank"
-                    className="p-2 hover:text-stone-950 hover:bg-orange-400"
+                    className="hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-orange-400"
                   >
                     Build Front-End Web Apps from Scratch &#10138;
                   </a>
@@ -152,7 +148,7 @@ export default function Home() {
                   <a
                     href="https://www.datacamp.com/statement-of-accomplishment/course/58c539167b497501e9c7c2874cfc5d28f8537895"
                     target="_blank"
-                    className="p-2 hover:text-stone-950 hover:bg-orange-400"
+                    className="hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-orange-400"
                   >
                     Data Analysis with Spreadsheets &#10138;
                   </a>
@@ -162,13 +158,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="xl:max-w-screen-md mx-auto mt-10">
+        <div className="lg:max-w-screen-md mx-auto mt-10 md:mt-16">
           <h2 className="text-xl text-stone-950 font-semibold">MY WORK</h2>
           <div className="mt-10 p-8 bg-gray-100 rounded-lg drop-shadow-xl">
             <h3 className="text-lg text-stone-950 font-semibold">
               Triune Centre
             </h3>
-            <p className="mt-3 text-base leading-relaxed sm:leading-loose md:text-lg text-zinc-800">
+            <p className="mt-3 text-base leading-relaxed sm:leading-loose text-zinc-800">
               This is a coworking space that I help manage. I have created the
               SOP for the front office, implemented the accounting software, and
               run marketing campaigns for the company.
@@ -181,7 +177,7 @@ export default function Home() {
           </div>
           <div className="mt-10 p-8 bg-gray-100 rounded-lg drop-shadow-xl">
             <h3 className="text-lg text-stone-950 font-semibold">Get CTO</h3>
-            <p className="mt-3 text-base leading-relaxed sm:leading-loose md:text-lg text-zinc-800">
+            <p className="mt-3 text-base leading-relaxed sm:leading-loose text-zinc-800">
               They are a software house that provides training in programming
               language. I have organized and facilitated a few of their
               trainings.
@@ -196,7 +192,7 @@ export default function Home() {
             <h3 className="text-lg text-stone-950 font-semibold">
               Motivo Ventures
             </h3>
-            <p className="mt-3 text-base leading-relaxed sm:leading-loose md:text-lg text-zinc-800">
+            <p className="mt-3 text-base leading-relaxed sm:leading-loose text-zinc-800">
               I build this website for the objective to start my own agency and
               offer digital marketing services.
             </p>
@@ -207,7 +203,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="mt-16 md:mt-24 md:m-auto">
+          <div className="mt-20 md:mt-24">
             <div className="text-xl text-center text-stone-950 font-bold md:text-4xl">
               Need help in digital marketing and business operations?
             </div>
@@ -215,9 +211,9 @@ export default function Home() {
               <a href="https://www.fiverr.com/kk_lim" target="_blank">
                 <button
                   type="button"
-                  className="text-sm sm:text-base md:text-lg lg:text-xl bg-orange-400 text-stone-950 w-full md:w-1/2 font-bold p-3 mt-6 focus:outline-none hover:shadow-xl"
+                  className="text-sm sm:text-base md:text-lg bg-orange-400 text-stone-950 w-full max-w-xs h-12 font-bold p-2 box-border mt-6 md:mt-10 focus:outline-none hover:shadow-xl"
                 >
-                  HIRE ME!
+                  HIRE KK
                 </button>
               </a>
             </div>
@@ -225,7 +221,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="p-10 text-center text-sm md:text-base text-zinc-800 w-full bg-zinc-50">
+      <footer className="p-10 text-center text-sm md:text-base text-zinc-800 w-full">
         Copyright 2021 @ Keng Kee <br />- All Rights Reserved -
       </footer>
     </div>
