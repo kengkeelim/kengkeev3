@@ -5,6 +5,7 @@ const nextConfig = {
     images: {
         disableStaticImages: true,
     },
+    output: 'export',
 };
 
 module.exports = withPlugins(
