@@ -75,7 +75,7 @@ export default function Home() {
                   <a
                     href="https://skillshop.exceedlms.com/student/award/SuVtDSjhJJfD7SQt3mqctU4s"
                     target="_blank"
-                    className="text-pink-600 hover:font-bold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-pink-600"
+                    className="text-pink-600 hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-pink-600"
                   >
                     Google Ads Search Certification &#10138;
                   </a>
@@ -85,7 +85,7 @@ export default function Home() {
                   <a
                     href="https://www.credential.net/bifqx6ll"
                     target="_blank"
-                    className="text-pink-600 hover:font-bold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-pink-600"
+                    className="text-pink-600 hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-pink-600"
                   >
                     Build Front-End Web Apps from Scratch &#10138;
                   </a>
@@ -95,7 +95,7 @@ export default function Home() {
                   <a
                     href="https://www.datacamp.com/statement-of-accomplishment/course/58c539167b497501e9c7c2874cfc5d28f8537895"
                     target="_blank"
-                    className="text-pink-600 hover:font-bold hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-pink-600"
+                    className="text-pink-600 hover:underline hover:underline-offset-8 hover:decoration-4 hover:decoration-pink-600"
                   >
                     Data Analysis with Spreadsheets &#10138;
                   </a>
@@ -117,7 +117,7 @@ export default function Home() {
               run marketing campaigns for the company.
             </p>
             <a href="https://triune.com.my/" target="_blank">
-              <div className="mt-6 p-2 w-32 text-center text-sm text-pink-600 hover:text-zinc-50 hover:font-bold ml-auto hover:bg-pink-600">
+              <div className="mt-6 p-2 w-32 text-center text-sm text-pink-600 hover:font-bold ml-auto">
                 LEARN MORE &#9658;
               </div>
             </a>
@@ -130,7 +130,7 @@ export default function Home() {
               trainings.
             </p>
             <a href="https://uiux.getcto.asia/" target="_blank">
-              <div className="mt-6 p-2 w-32 text-center text-sm text-pink-600 hover:text-zinc-50 hover:font-bold ml-auto hover:bg-pink-600">
+              <div className="mt-6 p-2 w-32 text-center text-sm text-pink-600 hover:font-bold ml-auto">
                 LEARN MORE &#9658;
               </div>
             </a>
@@ -144,7 +144,7 @@ export default function Home() {
               offer digital marketing services.
             </p>
             <a href="https://motivo.marketing/" target="_blank">
-              <div className="mt-6 p-2 w-32 text-center text-sm text-pink-600 hover:text-zinc-50 hover:font-bold ml-auto hover:bg-pink-600">
+              <div className="mt-6 p-2 w-32 text-center text-sm text-pink-600 hover:font-bold ml-auto">
                 LEARN MORE &#9658;
               </div>
             </a>
