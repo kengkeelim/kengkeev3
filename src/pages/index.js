@@ -4,14 +4,17 @@ import styles from "../styles/Home.module.css";
 
 import profile from "../assets/undraw_hello_re_3evm.svg";
 
-export default function Home() {
-  
-  const YEAR = new Date().getFullYear(); 
+import { useState } from "react";
 
-  console.log("Year", YEAR);
+export default function Home() {
+  const [toggled, setToggled] = useState(false);
+
+  const YEAR = new Date().getFullYear();
 
   return (
-    <div className={`${styles.container} bg-gradient-to-br from-gray-100 via-zinc-50 to-pink-100`}>
+    <div
+      className={`${styles.container} bg-gradient-to-br from-gray-100 via-zinc-50 to-pink-100`}
+    >
       <Head>
         <title>Keng Kee | Resume</title>
         <link rel="icon" href="/favicon.ico" />
@@ -51,8 +54,6 @@ export default function Home() {
 
       <section className="w-screen px-10 pb-10 sm:px-24 sm:pb-24">
         <div className="lg:max-w-screen-md mx-auto">
-          
-
           <div className="md:mt-16 md:flex md:flex-row md:align-items-center md:justify-between">
             <div className="mt-10 md:mt-0 md:w-2/5">
               <h2 className="text-xl text-stone-950 font-semibold">SKILLS</h2>
@@ -154,22 +155,31 @@ export default function Home() {
             <div className="text-xl text-center text-stone-950 font-bold md:text-4xl">
               Need help in digital marketing and business operations?
             </div>
-            <div className="w-full text-center">
-              <a href="https://t.me/VZYUIOQQDS" target="_blank">
-                <button
-                  type="button"
-                  className="text-sm sm:text-base md:text-lg bg-orange-400 text-stone-950 w-full max-w-xs h-12 font-bold p-2 box-border mt-6 md:mt-10 focus:outline-none hover:text-zinc-50 hover:font-bold hover:bg-pink-600 hover:shadow-xl"
-                >
-                  LET'S CHAT
-                </button>
-              </a>
+            <div className="text-center flex flex-col items-center">
+              <button
+                type="button"
+                onClick={() =>{
+                  setToggled(!toggled);
+                  
+                  if(!toggled){
+                    navigator.clipboard.writeText('mailtokengkee@gmail.com');
+                  };
+                }}
+                className="text-sm sm:text-base md:text-lg bg-orange-400 text-stone-950 w-full max-w-xs h-auto font-bold p-4 box-border mt-6 md:mt-10 focus:outline-none hover:text-zinc-50 hover:font-bold hover:bg-pink-600 hover:shadow-xl"
+              >
+                {toggled ? "EMAIL COPIED!" : "EMAIL ME"}
+              </button>
+              { toggled && <div className="text-sm sm:text-base md:text-lg text-zinc-800 w-full max-w-xs h-auto mt-3 md:mt-6 p-4 border-dashed border-2 border-gray-500">
+                <i>mailtokengkee@gmail.com</i>
+              </div> }
             </div>
           </div>
         </div>
       </section>
 
       <footer className="p-10 text-center text-sm md:text-base text-zinc-800 w-full">
-        Copyright © {YEAR} <br />All Rights Reserved
+        Copyright © {YEAR} <br />
+        All Rights Reserved
       </footer>
     </div>
   );
